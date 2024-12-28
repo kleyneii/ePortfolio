@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My ePortfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="C:\Users\Keely\Documents\ePortfolio\styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Container for marquee text */
+        .marquee-container {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            width: auto;
+        }
+
+        .marquee-text {
+            display: inline-block;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        /* Hover effect to start scrolling */
+        .marquee-container:hover .marquee-text {
+            animation: marquee 10s linear infinite; /* Start the marquee effect on hover */
+        }
+
+        /* Define the marquee animation */
+        @keyframes marquee {
+            from {
+                transform: translateX(100%); /* Start the text outside on the right */
+            }
+            to {
+                transform: translateX(-100%); /* Move the text completely to the left */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <div class="marquee-container">
+                    <span class="marquee-text">My ePortfolio</span> <hr style="width: 70%; margin: 2px auto; border: 1px solid #000;">
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <header id="home" class="text-center py-5">
+        <div class="container">
+            <br>
+        <div class="home-img">
+            <img src="415142226_378936928067763_4179801934754547415_n.jpg" alt="Profile Photo" class="profile-photo rounded-circle mb-4" width="150" height="150">
+            <h1 class="display-4">Hi, I'm Kleynei!</h1>
+            <hr style="width: 35%; margin: 2px auto; border: 1px solid #000;">
+            <p class="lead" style="margin-bottom: 0;">A 3rd Year Computer Science Student</p>
+            <p class="tagline" style="font-size:small; margin-top: 0; padding-top: 0;" >Programmer | Web Developer | Game Developer | Designer </p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">About Me<hr style="width: 18%; margin: 5px auto; border: 1px solid #000000;"></h2>
+            <p class="text-center">I am Keely Shay I. Englatiera, a Computer Science student currently studying at the University of Science <br> and Technology 
+                of Southern Philippines (USTP). <br> I'm in the process of learning and building my skills in programming, <br> and likely enjoy exploring the world of game development, 
+                web development, and design.</p>
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <h4>Skills</h4>
+                    <ul class="list-unstyled skills-list">
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>React, Node.js</li>
+                        <li>Python, Django</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4>Interests</h4>
+                    <ul class="list-unstyled interests-list">
+                        <li>Web Development</li>
+                        <li>Machine Learning</li>
+                        <li>Open Source Projects</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">My Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="bca3d7cf72fbce57be60ffd86878c5a9.jpg" class="img-fluid" alt="Project 1 Screenshot">
+                        <h4>Project 1: Calculator</h4>
+                        <p>A Python based calculator project which showcases an ability to perform basic arithmetic operations.</p>
+                        <a href="https://github.com/kleyneii/ePortfolio/blob/main/calculator.py" class="btn btn-primary" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="07b146eec5b1c469ba6f847fbd8a5ec1.jpg" class="img-fluid" alt="Project 2 Screenshot">
+                        <h4>Project 2: Time</h4>
+                        <p>A Python based time project which displays the current time as well as showcases the real-time to its users.</p>
+                        <a href="https://github.com/kleyneii/ePortfolio/blob/main/time.py" class="btn btn-primary" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="9e658c41b651b583b116411889e155fc.jpg" class="img-fluid" alt="Project 3 Screenshot">
+                        <h4>Project 3: Timer</h4>
+                        <p>A Python based timer project which allows users to create a timer and have a countdown.</p>
+                        <a href="https://github.com/kleyneii/ePortfolio/blob/main/timer.py" class="btn btn-primary" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Me</h2>
+            <form action="https://formspree.io/f/{your-form-id}" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-white">
+        <p>&copy; 2024 Keely Shay Englatiera. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
