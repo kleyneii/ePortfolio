@@ -7,7 +7,9 @@ An ePortfolio wherein I showcase some of my works and projects as a Computer Sci
 Technologies Used:
 
 -HITML: For creating the structure of my website.
+
 -CSS: For the styling and basic design of the layout of my website.
+
 -JavaScript: A few interactive functionalities.
 
 
